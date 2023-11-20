@@ -1,0 +1,52 @@
+unit Unit3;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Data.Win.ADODB, Vcl.StdCtrls,
+  Vcl.Buttons, Vcl.ExtCtrls, Vcl.Grids, Vcl.DBGrids;
+
+type
+  TForm3 = class(TForm)
+    DBGrid1: TDBGrid;
+    Panel1: TPanel;
+    ComboBox1: TComboBox;
+    ComboBox2: TComboBox;
+    StaticText1: TStaticText;
+    StaticText2: TStaticText;
+    BitBtn1: TBitBtn;
+    BitBtn2: TBitBtn;
+    ADOQuery1: TADOQuery;
+    ADOQuery2: TADOQuery;
+    DataSource1: TDataSource;
+    procedure BitBtn2Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form3: TForm3;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm3.BitBtn2Click(Sender: TObject);
+var SQL_COMAND:String;
+begin
+  Try
+    SQL_COMAND:='select * from GroupCourse';
+    ADOQUEry1.Close;
+    ADoQuery1.SQL.Clear;
+    ADoQuery1.SQL.Text:=SQL_Comand;
+    ADoQuery1.Open;
+  except
+   on e:Exception do
+   ShowMessage(e.Message);
+  End;
+end;
+
+end.

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.075,=C:\Users\HP\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023.03.09 08:41:02.072,=C:\Users\HP\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023.03.09 08:58:28.597,C:\Users\HP\Desktop\C++\3 курс 2 семестр\Office Technology\Система тестирования\Unit1.pas=C:\Users\HP\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023.03.09 08:58:28.597,C:\Users\HP\Desktop\C++\3 курс 2 семестр\Office Technology\Система тестирования\Unit1.dfm=C:\Users\HP\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2023.03.09 08:58:33.096,C:\Users\HP\Desktop\C++\3 курс 2 семестр\Office Technology\Система тестирования\Project1.dproj=C:\Users\HP\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
